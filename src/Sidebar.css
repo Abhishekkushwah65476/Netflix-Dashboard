@@ -1,0 +1,139 @@
+
+.bodySidebar{
+    background-color: #0B2447;
+}
+.sidebar {
+    width: 250px;
+    min-height: 120vh;
+    background-color: #19376D;
+    color: #fff;
+    transition: 0.3s;
+    
+  }
+  
+  .closed {
+    width: 55px;
+    overflow: hidden;
+    
+  }
+  
+  .toggle-btn {
+    background-color: #6895D2;
+    color: #fff;
+    padding: 11.5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    z-index: 1;
+    
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: #6895D2;
+    }
+  }
+  .menu-list{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    
+   
+  }
+  .menu-list:active{
+    transform: scale(1.02);
+  }
+  .textwrap{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+  }
+
+
+  .Sticky-Nav{
+    height: 74px;
+    background-color: #071952;
+    flex-wrap: wrap;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0px 10px;
+    border-bottom: 0.01rem solid grey;
+  }
+  .Sticky-Nav input{
+    outline: none;
+    padding: 5px 10px 5px 10px;
+    width: 300px;
+  }
+  table {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #19376D;
+    
+  
+  }
+  td,thead,tbody,tr{
+   
+    /* border: 0.5px solid grey; */
+    padding: 10px;
+    margin: 5px;
+  }
+  .test-input{
+    outline: none;
+    background: #071952;
+    border: none;
+    padding: 5px;
+  }
+  
+  /* input label */
+  
+  .input-1{
+    position: relative;
+  
+   
+   
+  }
+  .input-label{
+    border: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    padding: 5px 7px;
+    border-radius: 5px;
+    background: none;
+    z-index: 9999;
+    margin: 0px 5px 0 5px;
+  }
+  .text-label{
+   position: absolute;
+   top: 0.2rem;
+   left: 1.3rem;
+   cursor: text;
+   background-color: #2E4374;
+   padding: 0 2px 0 2px;
+   transition: 0.2s ;
+  }
+  .input-label:focus ~ .text-label{
+    top: -0.7rem;
+    left: 1rem;
+    font-size: 0.8rem;
+  }
+  .input-label:not(:placeholder-shown)~.text-label{
+    top: -0.8rem;
+    left: 1rem;
+    font-size: 0.8rem;
+  }
+  .input-label::placeholder{
+    color: transparent;
+    margin-right: 5px;
+    
+  }
